@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Materials</title>
+<link rel="stylesheet" href="marketcss.css">
+</head>
+<body>
+  <div class="item-list">
+    <h1>Reference Materials</h1>
+    <ul>
+      <li>
+        <img src="book.png" alt="Book">
+        <h2>Books</h2>
+        <button onclick="o1()">See</button>
+      </li>
+      <li>
+        <img src="Researchpapers.png" alt="Researchpapers">
+        <h2>Researchpapers</h2>
+        <button onclick="o2()">See</button>
+      </li>
+      <li>
+        <img src="Courses1.png" alt="courses">
+        <h2>Courses</h2>
+        <button onclick="o3()">Explore</button>
+      </li>
+    </ul>
+  </div>
+  <script>
+    function o1()
+        {
+            window.open("https://github.com/divyesh008/eBooks","_blank");
+        }
+        function o2()
+        {
+            window.location.href = "research.html";
+        }
+        function o3()
+        {
+            window.location.href = "courses.html";
+        }
+  </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="indexcss.css">
+    <title>Learn!</title>
+</head>
+<body>
+    <div id="head">
+        <img class="Left-header" src="logo.jpg" alt="logo">
+        <ul>
+            <li><a href="material.html">Material</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li ><a href="about.html" target="_blank">About</a></li>
+            <li><a href="contact.html" target="_blank">Contact</a></li>
+        </ul>
+    </div>
+    <div>
+        <h2 id="header">Hey, Curious.....</h2>
+        <p>Welcome, to Tech-Byte Free Learning Platform</p>
+        <p>Please explore and find your interset. Feel free to contact us.</p>
+        <button onclick="reg()"><a class="but">Explore</a></button>
+    </div>
+    <script>
+         function reg()
+        {
+            window.location.href = "registration.html";
+        }
+        const header = document.getElementById('header');
+        const text = header.textContent;
+        header.textContent = ''; 
+
+        let i = 0;
+        const intervalId = setInterval(() => {
+        header.textContent += text[i];
+        i++;
+
+        if (i >= text.length) {
+            clearInterval(intervalId);
+        }
+        }, 100);
+        
+    </script>    
+</body>
+</html>

@@ -1,0 +1,120 @@
+body
+{
+    background-color: black;
+    color: rgb(236, 248, 177);
+}
+img
+{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+    padding: 10px;
+    padding-top: 40px;
+    height: 150px;
+    width: 150px;
+    border-radius: 20%;
+}
+h1
+{
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 30px;
+}
+p
+{
+    text-align: center;
+    font-size: 20px;
+}
+/*#signupForm
+{
+    align-items: center;
+}
+input[type=text]:focus {
+    border: 3px solid #ff004f;
+  }*/
+
+  
+  .center-foorm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px; 
+    padding-top: 80px;
+  }
+  
+  .foorm {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .foorm h2 {
+    margin-bottom: 10px;
+  }
+  
+  .foorm label,
+  .foorm input,
+  .foorm button {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .foorm button {
+    background-color: #ff004f;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+a
+{
+    color: antiquewhite;
+    text-decoration: none;
+}
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+.laa
+{
+    padding-top: 15px;
+}  
+
+  @keyframes flicker 
+  {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+  
+
+  .laa
+   {
+    font-size: 24px;
+    animation: flicker 1s infinite;
+  }

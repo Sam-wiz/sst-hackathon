@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="aboutcss.css">
+    <title>About Us</title>
+</head>
+<body>
+    <img src="logo.jpg" alt="logo">
+    <h3 id="header">Tech-Byte</h3>
+    <p>At Tech-Byte, our mission is to democratize education and foster a culture of continuous learning by providing high-quality, accessible, and completely free online courses. We believe that knowledge should be readily available to everyone, regardless of geographical location, financial background, or educational level. Through our innovative approach to education, we are paving the way for a brighter and more inclusive future.</p>
+    <p >Join us at Tech-Byte and embark on a transformative educational experience that knows no bounds. Discover new passions, acquire valuable skills, and shape your future—all while embracing the power of digital learning. Together, we are redefining education, one byte at a time.</p>
+    <div class="buttt">
+    <button onclick="op1()" class="cuon" >Courses</button>
+    <button onclick="op2()" class="cuon">My Portfolio</button>
+    <button onclick="op3()"class="cuon">Github</button>
+    <button onclick="op4()"class="cuon">Material</button>
+    <button onclick="op5()"class="cuon">Contact</button>
+    </div>
+    <script>
+        function op1()
+        {
+            window.location.href = "courses.html";
+        }
+        function op2()
+        {
+            window.open("https://sam-wiz.github.io/portfolio/","_blank");
+        }
+        function op3()
+        {
+            window.open("https://github.com/Sam-wiz","_blank");
+        }
+        function op4()
+        {
+            window.location.href = "material.html";
+        }
+        function op5()
+        {
+            window.location.href = "contact.html";
+        }
+        const header = document.getElementById('header');
+        const text = header.textContent;
+        header.textContent = ''; 
+
+        let i = 0;
+        const intervalId = setInterval(() => {
+        header.textContent += text[i];
+        i++;
+
+        if (i >= text.length) {
+            clearInterval(intervalId);
+        }
+        }, 100);
+    </script>
+</body>
+</html>

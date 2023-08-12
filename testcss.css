@@ -1,0 +1,19 @@
+.container {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Vertically center align items */
+  }
+  
+  .container img {
+    margin-right: 10px; /* Add some spacing between the image and list */
+  }
+  
+  /* Style the <ul> list */
+  .container ul {
+    list-style: none; /* Remove default list bullets */
+    padding: 0; /* Remove default padding */
+  }
+  
+  .container ul li {
+    margin: 5px 0; /* Add spacing between list items */
+  }
+  

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="regcss.css">
+    <title>Details</title>
+</head>
+<body>
+    <img src="logo.jpg" alt="logo">
+    <h1>Oh! Before that please submit your details</h1>
+    <p>This helps us to maintain your log</p>
+    <div class="center-foorm">
+    <form class="foorm">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br>
+
+        <button type="submit" class="button" ><span>Submit</span></a></button>
+        <button class="button" onclick="open1()"><span>Next</span></a></button>
+    </form>
+    </div>
+    <p class="laa">Please use next button to move to nextPages</p>
+    <script>
+        function open1()
+        {
+            window.location.href = "about.html";
+        }
+        
+    </script>
+</body>
+</html>

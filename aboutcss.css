@@ -1,0 +1,76 @@
+body
+{
+    background-color: black;
+    color: blanchedalmond;
+}
+img
+{
+    display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 50%;
+    padding: 10px;
+    padding-top: 60px;
+    height: 150px;
+    width: 150px;
+    border-radius: 20%;
+}
+h3
+{
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 30px;
+}
+p
+{
+    text-align: center;
+    padding: 100px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    font-size: 25px;
+}
+
+  .buttt
+   {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .cuon 
+  {
+    padding: 10px 20px;
+    margin: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    border: none;
+    background-color: #ff004f;
+    color:blanchedalmond;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  button
+  {
+    padding-top: 10px;;
+    margin: 30px;
+    font-size: 20px;
+  }
+  .cuon:hover 
+  {
+    animation: shake 0.2s infinite;
+  }
+  
+  @keyframes shake
+   {
+    0%, 100% 
+    {
+      transform: translateX(0);
+    }
+    10%, 30%, 50%, 70%, 90% 
+    {
+      transform: translateX(-5px);
+    }
+    20%, 40%, 60%, 80% 
+    {
+      transform: translateX(5px);
+    }
+}
